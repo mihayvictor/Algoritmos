@@ -6,6 +6,8 @@ public class DividirConquistar {
         List<Integer> list = new ArrayList<>();
         list.add(2);
         list.add(4);
+        list.add(1);
+        list.add(8);
         list.add(6);
 
         int total = soma(list);
@@ -15,7 +17,7 @@ public class DividirConquistar {
         System.out.println("Maoir = " +  maior);
 
         int menor = menor(list);
-        System.out.println("Menor " + menor);
+        System.out.println("Menor = " + menor);
 
         int numeroItens = numsItens(list);
         System.out.println("Número de itens = " + numeroItens);
