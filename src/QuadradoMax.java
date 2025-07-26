@@ -1,8 +1,8 @@
 
 
-public class DC {
+public class QuadradoMax {
 public static void main(String[] args) {
-    int largura = 1680, comprimento=640;
+    int largura=1680, comprimento=640;
 
     int[] result = encontrarQuadrado(largura, comprimento);
     System.out.println();
