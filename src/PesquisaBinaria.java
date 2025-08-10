@@ -7,7 +7,6 @@ public class PesquisaBinaria {
         System.out.println("Há " + array.length + " itens no array.");
         System.out.println();
         int resultado = pesquisaBinaria(array, item);
-        
 
         if (resultado >= 0) {
             System.out.println("O item está no indice " + resultado + " do array.");
@@ -27,8 +26,7 @@ public class PesquisaBinaria {
 
         meio = (alto + baixo) / 2;
         int chute = array[meio];
-
-            
+ 
             if (chute == item) {
                 return meio;
             }
@@ -37,8 +35,8 @@ public class PesquisaBinaria {
                 alto = meio - 1;
             }
             else {
-            System.out.println("Chute muito baixo: indice " + meio);
-            baixo = meio + 1;
+                System.out.println("Chute muito baixo: indice " + meio);
+                baixo = meio + 1;
             }
             
                
