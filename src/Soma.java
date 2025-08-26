@@ -21,7 +21,7 @@ public class Soma {
         if (lista.size() == 0) {
             return 0;
         }else{
-            return (lista.remove(i) + soma(lista, i));
+            return lista.remove(i) + soma(lista, i);
         }
      
     }
