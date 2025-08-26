@@ -17,7 +17,7 @@ public class DividirConquistarArray {
 
     }
 
-    public static int soma(int[] arr, int index) {
+    static int soma(int[] arr, int index) {
         if (index >= arr.length) {
             return 0;
         } else {
@@ -25,7 +25,7 @@ public class DividirConquistarArray {
         }
     }
 
-    public static int maior(int[] arr, int index) {
+    static int maior(int[] arr, int index) {
       
         if (index == arr.length -1) {
             return arr[index];
@@ -34,7 +34,7 @@ public class DividirConquistarArray {
         return Math.max(arr[index], restante);
     }
 
-    public static int menor(int[] arr, int index){
+    static int menor(int[] arr, int index){
         if (index == arr.length -1) {
             return arr[index];
         }
@@ -42,7 +42,7 @@ public class DividirConquistarArray {
         return Math.min(arr[index], restante);
     }
 
-    public static int numItems(int[] arr, int index){
+    static int numItems(int[] arr, int index){
         if (index == arr.length) {
             return 0;
         }else{

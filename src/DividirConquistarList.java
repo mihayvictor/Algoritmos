@@ -23,7 +23,7 @@ public class DividirConquistarList {
         System.out.println("Número de itens = " + numeroItens);
     }
 
-    public static Integer soma(List<Integer> nums) {
+    static Integer soma(List<Integer> nums) {
     
         if (nums.isEmpty()) {
             return 0;
@@ -32,7 +32,7 @@ public class DividirConquistarList {
         }
     } 
     
-    public static Integer maior(List<Integer> nums){
+    static Integer maior(List<Integer> nums){
         int maior = nums.get(0);
         for (int i = 0; i < nums.size(); i++) {
 
@@ -43,7 +43,7 @@ public class DividirConquistarList {
         return maior;
     }
 
-    public static Integer menor(List<Integer> nums){
+    static Integer menor(List<Integer> nums){
         int menor = nums.get(0);
         for (int i = 0; i < nums.size(); i++) {
             
@@ -54,7 +54,7 @@ public class DividirConquistarList {
         return menor;
     }
 
-    public static Integer numsItens(List<Integer> nums){
+    static Integer numsItens(List<Integer> nums){
         if (nums.isEmpty()) {
             return 0;
         }

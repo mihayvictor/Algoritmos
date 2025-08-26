@@ -16,7 +16,7 @@ public class PesquisaBinaria {
 
         }
 
-    public static int pesquisaBinaria(int[] array, int item){
+    static int pesquisaBinaria(int[] array, int item){
 
         int baixo = 0;
         int alto = array.length - 1;

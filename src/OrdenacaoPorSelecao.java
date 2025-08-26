@@ -16,7 +16,7 @@ public class OrdenacaoPorSelecao {
     
     }
     
-    public static int buscarMenor(List<Integer> lista){
+    static int buscarMenor(List<Integer> lista){
         int menor = lista.get(0);
         int menor_indice = 0;
 
@@ -30,7 +30,7 @@ public class OrdenacaoPorSelecao {
         return menor_indice;
     }
 
-    public static List<Integer> ordenacaoPorSelecao(List<Integer> lista){
+    static List<Integer> ordenacaoPorSelecao(List<Integer> lista){
         int menor = lista.get(0);
         int menor_indice = 0;
         List<Integer> novaLista = new ArrayList<>();
