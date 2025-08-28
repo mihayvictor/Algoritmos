@@ -10,9 +10,11 @@ public class Soma {
         lista.add(4);
         lista.add(6);
 
-        int total = soma(lista, 0);
-
-        System.out.println("Total: " + total);
+        int totalSoma = soma(lista, 0);
+        //int totalContagem = contagem(lista, 0);
+ 
+        System.out.println("Total: " + totalSoma);
+        //System.out.println("Itens na lista: " + totalContagem );
     }
 
     static int soma(List<Integer>lista, int i){
@@ -24,6 +26,19 @@ public class Soma {
             return lista.remove(i) + soma(lista, i);
         }
      
+    }
+
+    static int contagem(List<Integer>lista, int i){
+   
+        if (lista.size() == 0) {
+            return i;
+        }
+        else{
+            lista.remove(0);
+            i++;
+            return contagem(lista, i);
+        }
+
     }
 
 }
